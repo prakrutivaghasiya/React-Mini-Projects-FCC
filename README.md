@@ -1,2 +1,6 @@
 # React-Mini-Projects-FCC
-Learning React with freeCodeCamp's project of FrontEnd Library Course (React)
+Four Projects:
+  - Markdown Previewer
+  - Calculator
+  - Drum Machine
+  - Pomodro Clock
