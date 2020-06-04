@@ -6,10 +6,9 @@ body{
     flex-direction: row;
 }
 .left{
-    width: 45vw;
+    width: 50vw;
     height: 75vh;
     margin: 10px;
-    margin-right: 20px;
 }
 #editor{
     width: 100%;
