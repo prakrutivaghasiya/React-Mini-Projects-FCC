@@ -49,7 +49,7 @@ export class App extends Component {
     this.handleChange = (e) => this.setState({ markdown: e.target.value})
     return (
       <div className='container'>
-        <h3 className='m-4 text-center'>React Markdown Previwer</h3>
+        <h3 className='m-4 text-center'>React Markdown Previewer</h3>
         <div className='wrapper'>
           <div className='left'>
             <h5 className='text-center'>Edit:</h5>
