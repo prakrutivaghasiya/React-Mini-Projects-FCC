@@ -114,9 +114,9 @@ export class App extends Component {
 
           <p id='display'>{this.state.display}</p>
 
-          <div class="slidecontainer">
+          <div className="slidecontainer">
             Volume:
-            <input type="range" min="0" max="1" step='0.2' class="slider" id="volume"
+            <input type="range" min="0" max="1" step='0.2' className="slider" id="volume"
               value={this.state.volume}
               onChange={this.adjustVolume}
             />
