@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;800&display=swap');
+
+body{
+  background-color: #d38b8b;
+  font-family: 'Manrope', sans-serif;
+}
+
+#drum-machine{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 35vh auto;
+  padding: 20px;
+  width: 660px;
+  background-color: #d6d4d4;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 5px #3d3b3b,
+  3px 3px 5px #3d3b3b;
+}
+
+#drum-pads{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 8px;
+}
+
+.drum-pad{
+  height: 80px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b3b2b2;
+  text-align: center;
+  color: black;
+  box-shadow: 2px 2px 3px #3d3b3b;
+  cursor: pointer;
+}
+.drum-pad:active{
+  transform: translate(1px,1px);
+}
+
+#controls{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+#power{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#outer-select{
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+#inner-select{
+  background-color: blue;
+  height: 16px;
+  width: 17px;
+  float: right;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.slidecontainer {
+  display: inline-flex;
+}
+
+#display{
+  background-color: #757272;
+  border-radius: 3px;
+  height: 28px;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+  #drum-machine{
+    flex-direction: column;
+    height: 500px;
+    width: 260px;
+    margin: 50px auto;
+  }
+  #drum-pads{
+    transform: scale(0.7);
+  }
+  #controls{
+    margin: 0 auto;
+  }
+  #display{
+    padding: 5px;
+    height: 20px;
+    width: 95%;
+    font-size: 12px;
+  }
+}
+
+/* Slider css: Credits to w3schools.com */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  margin-top: 12px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: #000000;
+  outline: none;
+  opacity: 0.9;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+}
