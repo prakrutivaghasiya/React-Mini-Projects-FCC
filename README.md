@@ -6,4 +6,7 @@ Four Projects:
   
   - Calculator
   - Drum Machine
+  
+  ![Image2](drum-machine/drumMachine.png)
+  
   - Pomodro Clock
