@@ -1,9 +1,6 @@
 # React-Mini-Projects-FCC
 Four Projects:
-  - Markdown Previewer
-  
-  ![Image1](https://raw.githubusercontent.com/prakrutivaghasiya/React-Mini-Projects-FCC/master/markdown-previewer/MarkdownPreviewer.png)
-  
+ 
   - Calculator
 
   ![Image3](calculator/Calculator.png)
@@ -13,3 +10,7 @@ Four Projects:
   ![Image2](drum-machine/drumMachine.png)
   
   - Pomodro Clock
+  
+  - Markdown Previewer
+  
+  ![Image1](https://raw.githubusercontent.com/prakrutivaghasiya/React-Mini-Projects-FCC/master/markdown-previewer/MarkdownPreviewer.png)
