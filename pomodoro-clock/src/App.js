@@ -194,7 +194,7 @@ export class App extends Component{
         </div>
         <div className='author'>
           <p>Designed and Coded By</p>
-          <span><a href='https://github.com/prakrutivaghasiya'>Prakruti Vaghasiya</a></span>
+          <span><a href='https://github.com/prakrutivaghasiya' target='_blank' title='View Github Repo!'>Prakruti Vaghasiya</a></span>
         </div>
         <audio id='beep' preload='auto' src='https://www.soundjay.com/button/beep-09.mp3'
           ref={(ref) => {this.audio = ref}} />
