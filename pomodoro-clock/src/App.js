@@ -14,7 +14,8 @@ export class App extends Component{
       timer: 1500,
       isPlaying: false,
       interval: '',
-      alarmColor: { color: 'white'}
+      alarmColor: { color: 'white' },
+      alertShow: { display: 'none' }
     }
   }
 
@@ -32,7 +33,11 @@ export class App extends Component{
   } 
 
   IncrDecr = (sign, received_type, currLength, typelength) => {
-    if (this.state.isPlaying) { return }
+    if (this.state.isPlaying) { 
+      this.setState({ alertShow: { display: 'block', color: '#ea4d77', fontWeight: '700' } });
+      setTimeout(() => this.setState({ alertShow: { display: 'none' } }), 1500);
+      return ;
+    }
     
     const {type} = this.state;
   
@@ -158,6 +163,9 @@ export class App extends Component{
     return(
       <div>
         <h1>Pomodoro Clock</h1>
+        <div style={alertShow}>
+          Please first stop the timer to modify length.
+        </div>
         <div className='lengthControl'>
           <TimerLengthControl 
             title='Break Length'
