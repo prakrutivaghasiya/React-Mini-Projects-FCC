@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&family=Sarpanch:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+*{
+  background: #2C3A47;
+  color: #ffffff;
+  font-family: 'Maven Pro', sans-serif;
+}
+/* font-family: 'Maven Pro', sans-serif;
+font-family: 'Sarpanch', sans-serif; */
+
+body{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+
+h1{
+  margin: 0;
+}
+
+.lengthControl{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  width: 200px;
+}
+
+button{
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 25px;
+  margin: 2px 5px;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.8);
+}
+
+.lengthControl span{
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Sarpanch', sans-serif;
+}
+
+.timer h1{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  margin-top: 30px;
+  width: 240px;
+  border: 8px solid #1d2d3a;
+  border-radius: 40px;
+  font-size: 60px;
+  font-family: 'Sarpanch', sans-serif;
+}
+.timer span{
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.author{
+  margin-top: 40px;
+}
+.author p{
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.author a{
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(176, 192, 172);
+  font-size: 18px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(0.78);
+  }
+  .flex{
+    margin: 0 15px;
+  }
+}
